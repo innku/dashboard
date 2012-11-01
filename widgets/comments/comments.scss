@@ -22,6 +22,15 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     padding-left: 5px;
   }
 
+  .comment {
+    font-size:30px;
+  }
+
+  img {
+    width:100px;
+    -webkit-border-radius:5px;
+  }
+
   .comment-container {
     display: none;
   }
