@@ -10,7 +10,7 @@ class SharewallClient
 
   def execute
     raw_response = RestClient.get(url)
-    @response = JSON.parse raw_response.body
+    @response = JSON.parse(raw_response.body).reverse[0..7]
   end
 
   def data

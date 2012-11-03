@@ -1,6 +1,3 @@
-require 'rest_client'
-require 'json'
-
 url = 'https://api.twitter.com/1/lists/statuses.json'
 params = {slug:'twitter-4-innku', owner_screen_name: 'innku', 
           per_page: 10, page: 1}
