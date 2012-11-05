@@ -1,43 +1,39 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #eb9c3c;
+$background-color:  #47bbb3;
+$value-color:       #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);
-$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$title-color:       rgba(255, 255, 255, 0.7);;
+$moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
 // ----------------------------------------------------------------------------
-// Widget-link styles
+// Widget-number styles
 // ----------------------------------------------------------------------------
-.widget-links { 
+.widget-number { 
 
   background-color: $background-color;
   
   .title { 
     color: $title-color;
-    margin-bottom: 35px;
   }
 
-  .name {
-    padding-left: 5px;
+  .value {
+    color: $value-color;
   }
 
-  .link {
-    font-size:35px;
-  }
-
-  img {
-    width:65px;
-    -webkit-border-radius:5px;
-    margin-bottom:10px;
-  }
-
-  .link-container {
-    display: none;
+  .change-rate {
+    font-weight: 500;
+    font-size: 30px;
+    color: $value-color;
   }
 
   .more-info {
     color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
   }
   
 }
