@@ -1,5 +1,12 @@
 <% content_for(:title) { "INNKU Dashboard" } %>
 
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":3,"row":2},{"col":2,"row":1},{"col":4,"row":1},{"col":1,"row":2},{"col":1,"row":3},{"col":1,"row":1},{"col":3,"row":1}]')
+});
+</script>
+
+
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
@@ -15,7 +22,7 @@
     </li>
 
 
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="tweets" data-view="Links" style="background-color:#00c5f9;" data-title="Awesome Tweets"></div>
       <i class="icon-twitter icon-background"></i>
     </li>
@@ -28,6 +35,12 @@
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
     <div data-id="user_registration" data-view="List" style="background-color:#2c89a0;" 
       data-title='Registro de Usuarios'></div>
+    </li>
+
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="sharewall_click_count" data-view="List" style="background-color:#992222;" 
+      data-title='Sharewall Avg. Link popularity' data-moreinfo='Based on the last 20 links'></div>
     </li>
   </ul>
 

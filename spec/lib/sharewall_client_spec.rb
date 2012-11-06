@@ -6,7 +6,7 @@ describe SharewallClient do
 
   describe '#execute' do
     before do
-      RestClient.stub(:get){ stub(body: {the: 'body'}.to_json)}
+      RestClient.stub(:get){ stub(body: [{the: 'body'}].to_json)}
     end
     it 'Fetches the information from the url and params ' do
       RestClient.should_receive(:get).with(url)
@@ -14,7 +14,7 @@ describe SharewallClient do
     end
 
     it 'Returns a hash with the response body' do
-      subject.execute.should == {'the' => 'body'}
+      subject.execute.should == [{'the' => 'body'}]
     end
   end
 
