@@ -1,5 +1,5 @@
-actions   = [ 
-              {subdomain: 'Aventones', action_group: 313},
+actions   = [
+              {subdomain: 'Aventones', action_group: "Registro de usuario"},
               {subdomain: 'Sharewall', action_group: 998},
               {subdomain: 'Cocina',    action_group: 372},
               {subdomain: 'Puraoferta',action_group: 655},
