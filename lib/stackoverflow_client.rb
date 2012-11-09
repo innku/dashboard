@@ -41,7 +41,7 @@ class StackoverflowClient
   end
 
   def parse_response
-    @response['items'].map do |link|
+    @response['items'][0..5].map do |link|
       {
         label: user_hash[link['user_id']],
         value: link['reputation'].to_i
