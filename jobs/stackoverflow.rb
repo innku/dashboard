@@ -6,7 +6,9 @@ user_hash = {
   803847 => 'marrossa',
   803844 => 'adriancuadros',
   504059 => 'eddie baby',
-  800271 => 'j->p'
+  800271 => 'j->p',
+  481229 => 'agush',
+  892885 => 'mike r'
 }
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
