@@ -1,5 +1,7 @@
+# coding: utf-8
+
 actions   = [ 
-              {subdomain: 'aventones', action_group: 315}
+              {subdomain: 'aventones', action_group: 'Confirmación si'}
             ]
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
