@@ -13,7 +13,7 @@ class InnsightsClient
   def execute
     @response = actions.map do |action|
       url      = "http://#{action[:subdomain]}.#{base_url}"
-      response = RestClient.get(url, params: action)
+      response = RestClient.post(url, action)
       [action, (JSON.parse response)]
     end
   end

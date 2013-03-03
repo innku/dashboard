@@ -1,10 +1,10 @@
 actions   = [
-              {subdomain: 'Aventones', action_group: "Registro de usuario"},
-              {subdomain: 'Sharewall', action_group: 998},
-              {subdomain: 'Cocina',    action_group: 372},
-              {subdomain: 'Puraoferta',action_group: 655},
-              {subdomain: 'Pinstad',   action_group: 566},
-              {subdomain: 'Rutanet',   action_group: 5, name: 'Rutantet (Enviador)'}
+              {subdomain: 'aventones', :scope=>{:event=>{:name=>"Registro de usuario"}}},
+              #{subdomain: 'sharewall', :scope=>{:event=>{:name=>"998"}}},
+              {subdomain: 'cocina',    :scope=>{:event=>{:name=>"Nuevo usuario"}}},
+              {subdomain: 'puraoferta', :scope=>{:event=>{:name=>"Nuevo usuario"}}},
+              {subdomain: 'pinstad',   :scope=>{:event=>{:name=>"User register"}}},
+              {subdomain: 'rutanet',   :scope=>{:event=>{:name=>"transportista"}}},
             ]
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
