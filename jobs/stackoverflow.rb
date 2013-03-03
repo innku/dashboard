@@ -5,10 +5,11 @@ user_hash = {
   562692 => 'e3matheus',
   803847 => 'marrossa',
   803844 => 'adriancuadros',
-  504059 => 'eddie baby',
+  504059 => 'eddie',
   800271 => 'j->p',
   481229 => 'agush',
-  892885 => 'mike r'
+  892885 => 'mike r',
+  657355 => 'braulio'
 }
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
