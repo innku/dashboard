@@ -4,6 +4,7 @@ actions   = [
               {subdomain: 'puraoferta', :scope=>{:event=>{:name=>"Nuevo usuario"}}},
               {subdomain: 'pinstad',   :scope=>{:event=>{:name=>"User register"}}},
               {subdomain: 'rutanet',   :scope=>{:event=>{:name=>"transportista"}}},
+              {subdomain: 'interciudades', :scope=>{:event=>{:name=>"Registro de usuario"}}},
             ]
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
