@@ -1,5 +1,7 @@
+# encoding: utf-8;
+
 actions   = [
-              {subdomain: 'rubypros', action_group: 1133}
+              {subdomain: 'rubypros', scope: { event: { name: 'Compañia contactada' } } }
             ]
 
 SCHEDULER.every '5m', :first_in => 0 do |job|
